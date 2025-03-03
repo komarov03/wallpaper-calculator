@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/wallpaper-calculator/static/css/main.053b22f8.css",
-    "main.js": "/wallpaper-calculator/static/js/main.232e1f40.js",
+    "main.js": "/wallpaper-calculator/static/js/main.d1b0cf8e.js",
     "index.html": "/wallpaper-calculator/index.html",
     "main.053b22f8.css.map": "/wallpaper-calculator/static/css/main.053b22f8.css.map",
-    "main.232e1f40.js.map": "/wallpaper-calculator/static/js/main.232e1f40.js.map"
+    "main.d1b0cf8e.js.map": "/wallpaper-calculator/static/js/main.d1b0cf8e.js.map"
   },
   "entrypoints": [
     "static/css/main.053b22f8.css",
-    "static/js/main.232e1f40.js"
+    "static/js/main.d1b0cf8e.js"
   ]
 }
