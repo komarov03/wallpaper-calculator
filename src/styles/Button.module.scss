@@ -1,0 +1,37 @@
+@import './variables.scss';
+
+.calculator__start__button {
+    border: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 296px;
+    max-height: 56px;
+    border-radius: 12px;
+    padding: 15px 35px 15px 55px;
+    background: $brand-default;
+
+    text-decoration: none;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $white---white-100;
+    cursor: pointer;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: 25px;
+        width: 20px;
+        height: 20px;
+        background: url(../icons/magic-wand.png) center no-repeat;
+    }
+}
+
+.calculate {
+    max-width: 288px;
+}

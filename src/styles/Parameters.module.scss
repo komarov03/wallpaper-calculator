@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.parameters {
+    animation: fadeIn 0.3s ease forwards;
+    padding: 58px 80px;
+    max-width: 830px;
+    background: $white---white-100;
+    border-radius: 18px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    margin: 7px;
+
+    @media (max-width: 767px) {
+        padding: 22px 28px;
+    }
+}

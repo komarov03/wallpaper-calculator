@@ -1,0 +1,154 @@
+@import './variables.scss';
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.results {
+    animation: fadeIn 1s ease forwards;
+    border-radius: 18px;
+    padding: 42px 52px;
+    background: $brand-default;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media (max-width: 767px) {
+        padding: 18px;
+    }
+}
+
+.results__block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.results__title {
+    font-family: $second-family;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+    color: $white---white-100;
+}
+
+.results__data {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 54px;
+
+    @media (max-width: 767px) {
+        gap: 22px;
+        flex-direction: column;
+    }
+}
+
+.results__unit {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.results__number {
+    font-family: $second-family;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    color: $white---white-100;
+}
+
+.results__text {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $white---white-64;
+}
+
+.results__buttons {
+    display: flex;
+    gap: 16px;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 8px;
+        flex-shrink: 1;
+    }
+}
+
+.calculator__start__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
+    max-width: 296px;
+    max-height: 56px;
+    border-radius: 12px;
+    padding: 15px 35px 15px 55px;
+    background: $brand-default;
+
+    text-decoration: none;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $white---white-100;
+    cursor: pointer;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: 25px;
+        width: 20px;
+        height: 20px;
+        background: url(../icons/magic-wand.png) center no-repeat;
+    }
+}
+
+.reset {
+    padding: 15px 32px;
+    background: $white---white-100;
+
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $brand-default;
+
+    &:before {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        max-width: none;
+    }
+}
+
+.catalog {
+    padding: 15px 32px;
+    background: $white---white-100;
+
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $success---juice;
+
+    @media (max-width: 767px) {
+        max-width: none;
+    }
+
+    &:before {
+        display: none;
+    }
+}

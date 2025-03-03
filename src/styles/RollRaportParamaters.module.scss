@@ -1,0 +1,84 @@
+@import './variables.scss';
+
+.parameters {
+    &__text {
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 133%;
+        color: $black---black-80;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 16px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    &__button {
+        border: none;
+        flex: 1;
+        border-radius: 12px;
+        padding: 15px 32px;
+        background: $brand-default;
+        opacity: 0.2;
+
+        text-decoration: none;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: $white---white-100;
+        text-align: center;
+        cursor: pointer;
+
+        @media (max-width: 767px) {
+            padding: 9px 20px;
+        }
+    }
+}
+
+.parameters__rollRapport {
+    display: flex;
+    flex-shrink: 0;
+    gap: 48px;
+    width: 100%;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.parameters__roll {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.zero {
+    max-width: 70px;
+}
+
+.second {
+    max-width: 142px;
+}
+
+.third {
+    max-width: 142px;
+}
+
+.active {
+    background: $brand-default;
+    opacity: 1;
+    transition: opacity 0.25s ease;
+}
+
+.parameters__rapport {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 24px;
+}
