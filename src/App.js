@@ -5,7 +5,7 @@ import { Parameters } from "./pages/Parameters";
 function App() {
   return (
     <section className="calculator">
-      <BrowserRouter>
+      <BrowserRouter basename="/wallpaper-calculator">
         <Routes>
           <Route exact path="/" element={<CalculatorPromo />} />
           <Route path="/calculate" element={<Parameters />} />
