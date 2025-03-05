@@ -72,6 +72,10 @@
             color: $black---black-100;
         }
 
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
     }
 
 

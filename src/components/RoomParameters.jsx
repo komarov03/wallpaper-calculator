@@ -44,7 +44,7 @@ export function RoomParameters({ state, dispatch }) {
           <p className={styles.sizes__text}>Длина м</p>
           <input
             className={styles.sizes__input}
-            type="text"
+            type="number"
             placeholder="6.5"
             name="length"
             value={state.room.length}
@@ -58,7 +58,7 @@ export function RoomParameters({ state, dispatch }) {
           <p className={styles.sizes__text}>Ширина м</p>
           <input
             className={styles.sizes__input}
-            type="text"
+            type="number"
             placeholder="6.5"
             name="width"
             value={state.room.width}
@@ -72,7 +72,7 @@ export function RoomParameters({ state, dispatch }) {
           <p className={styles.sizes__text}>Высота м</p>
           <input
             className={styles.sizes__input}
-            type="text"
+            type="number"
             placeholder="6.5"
             name="height"
             value={state.room.height}
