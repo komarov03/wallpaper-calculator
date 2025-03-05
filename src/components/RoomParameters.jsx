@@ -6,6 +6,10 @@ export function RoomParameters({ state, dispatch }) {
   const validateField = (name, value) => {
     let error = "";
 
+    if (!validateInput(value)) {
+      return;
+    }
+
     if (!value) {
       error = "Это поле обязательно";
     } else if (isNaN(value)) {
@@ -29,6 +33,10 @@ export function RoomParameters({ state, dispatch }) {
     });
 
     validateField(name, value);
+  };
+
+  const validateInput = (value) => {
+    return /^\d*\.?\d*$/.test(value);
   };
 
   return (

@@ -5,6 +5,11 @@ import DeleteButton from "../icons/close.png";
 export function WindowParameters({ state, dispatch }) {
   const handleChange = (e, index) => {
     const { name, value } = e.target;
+
+    if (!validateInput(value)) {
+      return;
+    }
+
     dispatch({
       type: "UPDATE_WINDOW",
       payload: { index, field: name, value },
@@ -23,6 +28,10 @@ export function WindowParameters({ state, dispatch }) {
       type: "REMOVE_WINDOW",
       payload: index,
     });
+  };
+
+  const validateInput = (value) => {
+    return /^\d*\.?\d*$/.test(value);
   };
 
   return (

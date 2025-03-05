@@ -5,6 +5,11 @@ import DeleteButton from "../icons/close.png";
 export function DoorParameters({ state, dispatch }) {
   const handleChange = (e, index) => {
     const { name, value } = e.target;
+
+    if (!validateInput(value)) {
+      return;
+    }
+
     dispatch({
       type: "UPDATE_DOOR",
       payload: { index, field: name, value },
@@ -23,6 +28,10 @@ export function DoorParameters({ state, dispatch }) {
       type: "REMOVE_DOOR",
       payload: index,
     });
+  };
+
+  const validateInput = (value) => {
+    return /^\d*\.?\d*$/.test(value);
   };
 
   return (
