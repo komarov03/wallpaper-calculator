@@ -58,9 +58,8 @@ export function WindowParameters({ state, dispatch }) {
                     placeholder="0"
                     min={0}
                     onKeyDown={(e) => {
-                      if (e.key === "-" || e.key === "e" || e.key === "E") {
+                      if (!/[0-9.]/.test(e.key)) {
                         e.preventDefault();
-                        console.log("onkeydown");
                       }
                     }}
                     value={window.length ? window.length : ""}
@@ -76,9 +75,8 @@ export function WindowParameters({ state, dispatch }) {
                     placeholder="0"
                     min={0}
                     onKeyDown={(e) => {
-                      if (e.key === "-" || e.key === "e" || e.key === "E") {
+                      if (!/[0-9.]/.test(e.key)) {
                         e.preventDefault();
-                        console.log("onkeydown");
                       }
                     }}
                     value={window.width ? window.width : ""}
