@@ -58,7 +58,7 @@ export function DoorParameters({ state, dispatch }) {
                     placeholder="0"
                     min="0"
                     onKeyDown={(e) => {
-                      if (!/[0-9.]/.test(e.key)) {
+                      if (!/[0-9.]|Backspace|Delete/.test(e.key)) {
                         e.preventDefault();
                       }
                     }}
@@ -75,7 +75,7 @@ export function DoorParameters({ state, dispatch }) {
                     placeholder="0"
                     min="0"
                     onKeyDown={(e) => {
-                      if (!/[0-9.]/.test(e.key)) {
+                      if (!/[0-9.]|Backspace|Delete/.test(e.key)) {
                         e.preventDefault();
                       }
                     }}

@@ -58,7 +58,7 @@ export function RoomParameters({ state, dispatch }) {
             value={state.room.length}
             onChange={handleRoomChange}
             onKeyDown={(e) => {
-              if (!/[0-9.]/.test(e.key)) {
+              if (!/[0-9.]|Backspace|Delete/.test(e.key)) {
                 e.preventDefault();
               }
             }}
@@ -77,7 +77,7 @@ export function RoomParameters({ state, dispatch }) {
             value={state.room.width}
             onChange={handleRoomChange}
             onKeyDown={(e) => {
-              if (!/[0-9.]/.test(e.key)) {
+              if (!/[0-9.]|Backspace|Delete/.test(e.key)) {
                 e.preventDefault();
               }
             }}
@@ -96,7 +96,7 @@ export function RoomParameters({ state, dispatch }) {
             value={state.room.height}
             onChange={handleRoomChange}
             onKeyDown={(e) => {
-              if (!/[0-9.]/.test(e.key)) {
+              if (!/[0-9.]|Backspace|Delete/.test(e.key)) {
                 e.preventDefault();
               }
             }}
